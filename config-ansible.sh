@@ -16,3 +16,4 @@ echo "web.com 	ansible_ssh_private_key_file=/vagrant/.vagrant/machines/web/virtu
 echo "db.com 	ansible_ssh_private_key_file=/vagrant/.vagrant/machines/db/virtualbox/private_key" | sudo tee -a /etc/ansible/hosts
 echo "docker.com 	ansible_ssh_private_key_file=/vagrant/.vagrant/machines/docker/virtualbox/private_key" | sudo tee -a /etc/ansible/hosts
 ansible-playbook /home/vagrant/playbooks/install-docker.yaml
+ansible-playbook /home/vagrant/playbooks/install-web.yaml
